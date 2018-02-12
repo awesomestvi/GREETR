@@ -1,7 +1,11 @@
 document.body.style.backgroundColor = "#222";
 document.body.style.color = "#fff";
+var browser = window.clientInformation.appName;
 
-$(document).ready(function() {
+$(document).ready(function() {    
+    if(browser == "Netscape") {
+        $("html").addClass('Safari');
+    };
     $('#login_page > .submit').click(function() {
         var lang = $("#lang").val();
         var formal = $("#formal").val();
