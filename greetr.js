@@ -105,6 +105,7 @@
     Greetr.init = function(firstName, lastName, language) {
         
         if(firstName === "" || firstName === undefined) {
+            global.alert("Firstname is required");
             throw "Firstname is required";            
         }
         
