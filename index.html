@@ -2,7 +2,27 @@
     <head>
         <title>Greetr Library/Framework</title>        
     </head>
-    <body>        
+    <body>
+        <div id="login_page">
+            <div style="margin-bottom: 15px">
+                <input id="firstname" type="text" placeholder="First name">
+                <input id="lastname" type="text" placeholder="last name">
+            </div>
+            <select id="lang">
+                <option value="en">English</option>
+                <option value="hindi">Hindi</option>
+                <option value="mar">Marathi</option>
+            </select>
+            <select id="formal">
+                <option value="true">Formal</option>
+                <option value="">Informal</option>
+            </select>
+            <button class="submit" type="submit">Submit</button>
+            <button class="clear" type="submit">Clear Console</button>
+        </div>
+        <div>
+            <h1 id="greetings"></h1>
+        </div>
         <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="greetr.js"></script>
         <script type="text/javascript" src="app.js"></script>
